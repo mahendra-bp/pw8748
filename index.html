@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoloinWeb </title>
+		
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+  background-color:white;
+
+}
+
+.konten:hover .image {
+  opacity: 0.3;
+}
+
+.konten:hover .middle {
+  opacity: 1;
+}
+
+
+.konten1:hover .image {
+  opacity: 0.3;
+}
+
+.konten1:hover .middle {
+  opacity: 1;
+}
+
+.konten2:hover .image {
+  opacity: 0.3;
+}
+
+.konten2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+    </style>
+
+		
+</head>
+<body>
+
+
+    <!-- BAGIAM NAVBAR -->
+		<nav class="navbar navbar-fixed-top scrolled" role="navigation" >
+    <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed custom-nav-bar" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="index.html"> <img src="img/logoslo.png" width="150px" style="display: inline-block; margin-top: 5px"  /></a>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+
+          <input class="form-control transparent-input" type="text" class="form-control" placeholder="Pencarian">
+        </div>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html"><span class="fa fa-home fa-1.5x" aria-hidden="true"></span>  Home</a></li>
+        <li><a href="wisata.html"><i class="fa fa-map-marker fa-1.5x" aria-hidden="true"></i>  Wisata </a></li>
+        <li><a href="kuliner.html"><span class="fa fa-cutlery fa-1.5x" aria-hidden="true"></span> Kuliner </a></li>
+        <li><a href="tips.html"><span class="fa fa-book fa-1.5x" aria-hidden="true"></span>  Aneka Tips </a></li>
+        <li><a href="about.html"><span class="fa fa-users fa-1.5x" aria-hidden="true"></span>  About Us </a></li>
+        
+      </ul>
+      
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- END BAGIAM NAVBAR -->
+
+<!--  BAGIAM CAROUSEL -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="https://www.google.co.id/search?q=selat+solo&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwiqmdmCrN7TAhXJL48KHaSPAOsQ_AUIBigB&biw=1517&bih=735#tbm=isch&q=grojogan+sewu+tawangmangu" target="_blank" ><img src="img/caro1.jpg" /></a>
+      <div class="carousel-caption">
+        <h2>TAWANGMANGU</h2>
+        <p>Indahnya Pemandangan Tawangmangu</p>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://www.google.co.id/search?q=selat+solo&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwiqmdmCrN7TAhXJL48KHaSPAOsQ_AUIBigB&biw=1517&bih=735#tbm=isch&q=pasar+gede+solo" target="_blank"><img src="img/caro2.jpg" /></a>
+      <div class="carousel-caption">
+        <h2>PASAR GEDE</h2>
+        <p>Salah Satu Icon Koa Solo</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <a href="https://www.google.co.id/search?q=selat+solo&source=lnms&tbm=isch&sa=X&sqi=2&ved=0ahUKEwiqmdmCrN7TAhXJL48KHaSPAOsQ_AUIBigB&biw=1517&bih=735"><img src="img/caro3.jpg" target="_blank" /></a>
+      <div class="carousel-caption">
+        <h2>SELAT SOLO</h2>
+        <p>Makanan yang wajib Di coba ketika berkunjung ke solo</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!--  END BAGIAM CAROUSEL -->
+
+<!--  BAGIAN CONTENT -->
+ <div class="pichome" id="pichome-1">
+    <div class="container konten2">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <a href="kuliner.html" target="_blank"><img src="img/home1.png" class="image img-responsive">
+          <div class="middle">
+            <div class="text">Klik Untuk Detail</div>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+    <div class="container">
+  <div class="pichome" id="pichome-2">
+    <div class="container konten1">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+        <a href="wisata.html" target="_blank">
+          <img src="img/home2.png" class="image img-responsive">
+          <div class="middle">
+          <div class="text">Klik Untuk Detail</div>
+            
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <div class="pichome" id="pichome-3">
+    <div class="container konten">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <a href="tips.html" target="_blank"><img src="img/home3.png" class="image img-responsive">
+          <div class="middle">
+            <div class="text">Klik Untuk Detail</div>
+          </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<br>
+<br>
+<!--  END BAGIAN CONTENT -->
+
+
+<!--  BAGIAN FOOTER -->
+<footer>    
+    <div class="footer-bottom">
+        <div class="container">
+        <center>
+          <a href='index.html'> <img src="img/logoslo.png" align="middle" style="display: inline-block; margin-top: 5px vertical-align:center; width:200px;"></a>
+          <br><br>
+          <p>
+            <a href='https://www.facebook.com/' target="_blank"><i class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href='https://twitter.com' target="_blank"><i class="fa fa-twitter fa-3x social"></i></a>
+              <a href='http://youtube.com' target="_blank"><i class="fa fa-youtube-play fa-3x social"></i></a> 
+              <a href='#' target="_blank"><i class="fa fa-whatsapp  fa-3x social"></i></a> 
+              <a href='#' target="_blank"><i class="fa fa-linkedin fa-3x social"></i></a> 
+              
+            </p>
+            <p style="color:#808080; font-size: 23px; vertical-align: middle;"> Copyright © SoloinWeb 2017. All right reserved. </p>
+        </center>
+        </div>
+    </div>
+    <!--/.footer-bottom--> 
+</footer>
+
+</body>
+</html>
